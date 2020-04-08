@@ -7,7 +7,7 @@ Some error messages are shown in the logcat while some are returned as the respo
 
 Developed on IntelliJ using maven.
 
-API Documentation can be accessed in this url(that is after running application):
+API Documentation can be accessed on the following urls(that is after running application):
 
 **http://localhost:7000/v2/api-docs (Plain Documentation)**
 
