@@ -26,5 +26,5 @@ Installation Notes:
 9. Use postman or any other application to make Http POST Requests on the urls like: localhost:7000/order
 
 
-_(Refer to appropriate branches to see login implementations - master branch includes just api):_
+_(Refer to appropriate branches to see login implementations & other variations - master branch includes just api):_
 Spring-boot is used for easy configuration of the project while concept of Interceptor is used to handle requests on login/logout/food/meals uri's.
