@@ -28,3 +28,7 @@ Installation Notes:
 
 _(Refer to appropriate branches to see login implementations & other variations - master branch includes just api):_
 Spring-boot is used for easy configuration of the project while concept of Interceptor is used to handle requests on login/logout/food/meals uri's.
+
+**The concept of Interceptor is used to handle requests on login/logout/order/meal uri's. (using "http_session" branch)**
+
+**JWT is used to handle requests on login/logout/order/meal uri's. (using "using_jwt" branch)**
