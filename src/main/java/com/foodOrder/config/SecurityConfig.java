@@ -1,0 +1,34 @@
+package com.foodOrder.config;
+
+import com.foodOrder.interceptor.AuthenticationInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+/**
+ * Author: Hosanna Gabe-Oji.
+ * Project: foodOrder.
+ * Date: 4/8/2020.
+ */
+@Configuration
+public class SecurityConfig extends WebMvcConfigurerAdapter {
+
+    @Autowired
+    AuthenticationInterceptor handlerInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        super.addInterceptors(registry);
+        registry.addInterceptor(handlerInterceptor);
+    }
+
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder(){
+        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+        return bCryptPasswordEncoder;
+    }
+
+}
