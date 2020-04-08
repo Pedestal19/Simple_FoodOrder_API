@@ -24,8 +24,7 @@ Installation Notes:
 7. Unit Testing, Integration & Systems tests can be run on the terminal by using "mvn test".
 8. Application runs on tomcat server on port 7000.
 9. Use postman or any other application to make Http POST Requests on the urls like: localhost:7000/order
-10. The password is sent via Request Header along with the confirm password for signup url. On successful signup, the server will respond with appropriate message.
 
 
-_(Refer to appropriate branches to see login implementations):_
+_(Refer to appropriate branches to see login implementations - master branch includes just api):_
 Spring-boot is used for easy configuration of the project while concept of Interceptor is used to handle requests on login/logout/food/meals uri's.
